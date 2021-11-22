@@ -1,7 +1,7 @@
-from rest_framework import viewssets
+from rest_framework import viewsets
 from students.api import serializers
 from students import models
 
-class StudentViewSet(viewssets.ModelViewSet):
+class StudentViewSet(viewsets.ModelViewSet):
     serializer_class = serializers.StudentSerializer
-    queryset = models.Stundet.objects.all()
+    queryset = models.Student.objects.all()
