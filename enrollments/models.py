@@ -6,7 +6,7 @@ from courses.models import Course
 
 class Enrollment(models.Model):
     id_student = models.ManyToManyField(Student)
-    id_course =  models.OneToOneField(Course, on_delete=models.SET_NULL, null=True)
+    id_course =  models.ManyToManyField(Course)
     date_enroll = models.DateField()
     date_close = models.DateField()
     score = models.IntegerField()
