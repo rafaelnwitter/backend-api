@@ -10,8 +10,9 @@ class Enrollment(models.Model):
     date_enroll = models.DateField()
     date_close = models.DateField()
     score = models.IntegerField()
-    status = (
+    status_choice = (
         ("Ap", "Aprovado"),
-        ("R", "Reprovado"),
+        ("Rp", "Reprovado"),
         ("Ad", "Andamento")
     )
+    status = models.CharField(max_length=2, choices=status_choice, blank=False, null=False)
