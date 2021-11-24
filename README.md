@@ -19,4 +19,4 @@
 	- http://127.0.0.1:8000/enrollments/?status=Rp
 	- Sendo Rp para alunos reprovados, Ap para alunos aprovados e Ad para cursos em andamento
 
-- [Testes via Postman](https://go.postman.co/workspace/My-Workspace~bdd094bb-68b6-4bdf-8d09-99e05e7bb8cc/collection/18510677-f88f7e34-e2be-439b-bf97-fbc4841dfcc5)
+- [Testes via Postman](https://www.getpostman.com/collections/0eb463ddcd7a45613d74)
