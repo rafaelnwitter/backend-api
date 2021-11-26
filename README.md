@@ -16,7 +16,7 @@
 
 
 - Para filtrar é utilizado a seguinte rota
-	- http://127.0.0.1:8000/enrollments/?status=Rp
-	- Sendo Rp para alunos reprovados, Ap para alunos aprovados e Ad para cursos em andamento
+	- http://127.0.0.1:8000/enrollments/?status=Reprovado
+	- Sendo Reprovado para alunos reprovados, Aprovado para alunos aprovados e Andamento para cursos em andamento
 
 - [Testes via Postman](https://www.getpostman.com/collections/0eb463ddcd7a45613d74)
