@@ -5,8 +5,8 @@ from students.models import Student
 from courses.models import Course
 
 class Enrollment(models.Model):
-    student = models.ForeignKey(Student, on_delete=models.SET_NULL, null=True)
-    course = models.ForeignKey(Course, on_delete=models.SET_NULL, null=True)
+    student = models.OneToOneField(Student, on_delete=models.CASCADE, null=False, unique=True)
+    course = models.ForeignKey(Course, on_delete=models.CASCADE, null=False)
     date_enroll = models.DateField()
     date_close = models.DateField()
     score = models.IntegerField()
