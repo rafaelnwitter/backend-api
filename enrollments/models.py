@@ -17,8 +17,4 @@ class Enrollment(models.Model):
     )
     status = models.CharField(max_length=10, choices=status_choice, blank=False, null=False, default="Ad")
 
-    def id_student(id):
-        id_student = id
-
-    def id_course(id):
-        id_course = id
+    

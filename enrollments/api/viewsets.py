@@ -9,5 +9,5 @@ class EnrollmentsViewSet(viewsets.ModelViewSet):
     serializer_class = serializers.EnrollmentsSerializer
     queryset = models.Enrollment.objects.all()
     filter_backends = [DjangoFilterBackend, SearchFilter]
-    filterset_fields = ['status', 'date_enroll', 'score']
-    search_fields = ['status', 'date_enroll', 'score']
+    filterset_fields = ['status', 'date_enroll', 'score', 'student', 'course']
+    search_fields = ['status', 'date_enroll', 'score', 'student', 'course']
