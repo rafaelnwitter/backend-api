@@ -15,7 +15,8 @@
 	- PUT -->  http://localhost:8000/students/id
 
 
-- Para filtrar é utilizado a seguinte rota
+- Os filtos disponiveis são
+	- http://127.0.0.1:8000/enrollments/? --> status, date_close, date_enroll, student, course
 	- http://127.0.0.1:8000/enrollments/?status=Reprovado
 	- Sendo Reprovado para alunos reprovados, Aprovado para alunos aprovados e Andamento para cursos em andamento
 
